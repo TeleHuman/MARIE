@@ -1,5 +1,4 @@
 # MARIE - Multi-Agent auto-Regressive Imagination for Efficient learning
-This code accompanies the paper "[Scalable Multi-Agent Model-Based Reinforcement Learning](https://arxiv.org/abs/2205.15023)".
 
 Code for the paper *Decentralized Transformers with Centralized Aggregation are Sample-Efficient Multi-Agent World Models*. [Paper link](https://arxiv.org/abs/2406.15836)
 
