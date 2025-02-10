@@ -1,8 +1,7 @@
-marie_path="/mnt/data/optimal/zhangyang/Projects/reprod_w_old/0507_repro_results/starcraft/2s3z_vq/run1/ckpt/model_final.pth"
-# marie_path="/mnt/data/optimal/zhangyang/Projects/reprod_w_old/0503_repro_results/starcraft/3s_vs_3z_vq/run1/ckpt/model_final.pth"
+marie_path="xx.pth"
 tokenizer="vq"
 
-mamba_path="/mnt/data/optimal/zhangyang/code/mamba/mamba_results/starcraft/2s_vs_1sc/run1/ckpt/mamba_model.pth"
+mamba_path="xx.pth"
 
 # 2m_vs_1z
 map_name="2s3z"

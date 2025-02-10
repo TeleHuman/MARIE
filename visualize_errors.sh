@@ -1,8 +1,8 @@
-marie_path="/ailab/user/zhangyang2/Projects/Trans-mamba/0515_H25_results/starcraft/3s_vs_5z_vq/run1/ckpt/model_final.pth"
+marie_path="xx.pth"
 # marie_path="/mnt/data/optimal/zhangyang/Projects/reprod_w_old/0503_repro_results/starcraft/3s_vs_3z_vq/run1/ckpt/model_final.pth"
 tokenizer="vq"
 
-mamba_path="/ailab/user/zhangyang2/mawm_baselines/mamba/0515_H25_results/starcraft/3s_vs_5z/run1/ckpt/mamba_model.pth"
+mamba_path="xx.pth"
 
 # 2m_vs_1z
 map_name="3s_vs_5z"
