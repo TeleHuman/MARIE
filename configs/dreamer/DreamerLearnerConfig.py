@@ -40,7 +40,7 @@ class DreamerLearnerConfig(DreamerConfig):
         # self.SEQ_LENGTH = 20
         self.SEQ_LENGTH = self.HORIZON
         
-        self.N_SAMPLES = 200  # 1
+        self.N_SAMPLES = 100  # 1
         self.EPOCHS = 5 # 4; 27m epochs should be 20, agents_num ~ 10 should be 20
 
         self.TARGET_UPDATE = 20  # 1
