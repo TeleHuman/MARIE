@@ -10,6 +10,7 @@ class StarCraft:
         self.n_obs = env_info["obs_shape"]
         self.n_actions = env_info["n_actions"]
         self.n_agents = env_info["n_agents"]
+        self.discrete = True
 
     def to_dict(self, l):
         return {i: e for i, e in enumerate(l)}

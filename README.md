@@ -10,7 +10,12 @@ Code for the paper *Decentralized Transformers with Centralized Aggregation are 
 pip install wheel
 # Note: we don't run exp on Flatland. It only serves for running the code without errors.
 pip install flatland-2.2.2/
-pip install -r requirements.txt 
+
+# install torch
+conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.7 -c pytorch -c nvidia
+
+pip install git+https://github.com/oxwhirl/smac.git
+
 ```
 
 We currently implement the interfaces for common MARL environments and they can be used directly.
@@ -19,7 +24,7 @@ We currently implement the interfaces for common MARL environments and they can 
 
 Please follow [the official instructions](https://github.com/oxwhirl/smac) to install SMAC.
 
-### Installing Google Research Football
+### Installing Google Research Football (Deprecated)
 
 Please follow [the official instructions](https://github.com/google-research/football) to install Google Research Football.
 
@@ -31,6 +36,14 @@ pip install supersuit==3.7.0
 ```
 
 ### Installing MAMujoco
+
+```
+pip install "mujoco-py==2.1.2.14"
+pip install "Jinja2==3.0.3"
+pip install "glfw==2.5.1"
+pip install "Cython==0.29.28"
+pip install patchelf
+```
 
 Please follow [the instruction on PKU-HARL repo](https://github.com/PKU-MARL/HARL/tree/main) to install MAMujoco.
 

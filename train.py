@@ -221,16 +221,16 @@ if __name__ == "__main__":
     dir_prefix = args.env_name + '-'+ args.agent_conf if args.agent_conf is not None else args.env_name
 
     run_dir = Path(os.path.dirname(os.path.abspath(__file__)) + f"/{current_date_string}_results") / args.env / (dir_prefix + f"-{args.tokenizer}")
-    curr_run = f"run{random.randint(1000, 9999)}"
-    # if not run_dir.exists():
-    #     curr_run = 'run1'
-    # else:
-    #     exst_run_nums = [int(str(folder.name).split('run')[1]) for folder in run_dir.iterdir() if
-    #                         str(folder.name).startswith('run')]
-    #     if len(exst_run_nums) == 0:
-    #         curr_run = 'run1'
-    #     else:
-    #         curr_run = 'run%i' % (max(exst_run_nums) + 1)
+    # curr_run = f"run{random.randint(1000, 9999)}"
+    if not run_dir.exists():
+        curr_run = 'run1'
+    else:
+        exst_run_nums = [int(str(folder.name).split('run')[1]) for folder in run_dir.iterdir() if
+                            str(folder.name).startswith('run')]
+        if len(exst_run_nums) == 0:
+            curr_run = 'run1'
+        else:
+            curr_run = 'run%i' % (max(exst_run_nums) + 1)
     
     run_dir = run_dir / curr_run
     if not run_dir.exists():

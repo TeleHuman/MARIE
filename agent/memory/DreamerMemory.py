@@ -219,7 +219,7 @@ class DreamerMemory:
         last = self.process_batch(self.last, vec_idxs, batch_size, sl)
         
         return {'observation': observation.transpose(1, 0), 'reward': reward.transpose(1, 0), 'action': action.transpose(1, 0), 'done': done.transpose(1, 0), 
-                'fake': fake.transpose(1, 0), 'last': last.transpose(1, 0), 'av_action': av_action.transpose(1, 0) if av_action else None}
+                'fake': fake.transpose(1, 0), 'last': last.transpose(1, 0), 'av_action': av_action.transpose(1, 0) if av_action is not None else None}
     
     def load_from_pkl(self, dataset_path, remove_fake=True):
         with open(dataset_path, 'rb+') as f:

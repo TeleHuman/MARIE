@@ -411,7 +411,7 @@ class DreamerLearner:
                                     use_stack=self.config.use_stack,
                                     stack_obs_num=self.config.stack_obs_num if self.config.use_stack else None,
                                     use_valuenorm = self.use_valuenorm,
-                                    value_normalizer = self.value_normalizer,
+                                    value_normalizer = self.value_normalizer if self.use_valuenorm else None,
                                     )
         
         if self.use_valuenorm:

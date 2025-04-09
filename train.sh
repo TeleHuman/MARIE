@@ -4,7 +4,7 @@ map_name="3s_vs_5z"
 env="starcraft"
 seed=2
 cuda_device=0
-steps=2000
+steps=10000
 
 # --ce_for_av
 CUDA_VISIBLE_DEVICES=${cuda_device} python train.py --n_workers 1 --env ${env} --env_name ${map_name} --seed ${seed} --steps $steps --mode disabled --tokenizer vq --decay 0.8 \

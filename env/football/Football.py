@@ -1,6 +1,6 @@
 import copy
 import numpy as np
-import gfootball.env as football_env
+# import gfootball.env as football_env
 from gym.spaces import Discrete, Box
 
 env_num_agents = {

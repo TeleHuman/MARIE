@@ -77,5 +77,13 @@ class DreamerLearnerConfig(DreamerConfig):
         ## control whether average the predicted rewards
         self.critic_average_r = False
 
+        ## discrete regression
+        self.rewards_prediction_config = {
+            'loss_type': 'hlgauss',
+            'min_v': -3., 
+            'max_v': 3.,
+            'bins': 128,
+        }
+
     def create_learner(self):
         return DreamerLearner(self)
