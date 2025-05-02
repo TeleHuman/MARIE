@@ -1,6 +1,6 @@
 # MARIE - Multi-Agent auto-Regressive Imagination for Efficient learning
 
-Code for the paper *Decentralized Transformers with Centralized Aggregation are Sample-Efficient Multi-Agent World Models*. [Paper link](https://arxiv.org/abs/2406.15836)
+Code for the paper *Decentralized Transformers with Centralized Aggregation are Sample-Efficient Multi-Agent World Models*. [Paper link](https://openreview.net/forum?id=xT8BEgXmVc)
 
 ## Installation
 
